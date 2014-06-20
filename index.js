@@ -285,7 +285,7 @@ var shellApi = {
 							}
 							
 							if (app.params['chromiumFlags']) {
-								for(var i=0;i<app.params['chromiumFlags'];i++) {
+								for(var i=0;i<app.params['chromiumFlags'].length;i++) {
 									app.params['chromiumCmd'].push(app.params['chromiumFlags'][i]);
 								}
 							}
